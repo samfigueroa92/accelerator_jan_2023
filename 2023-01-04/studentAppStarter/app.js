@@ -19,7 +19,7 @@ app.use(express.json()); // Why do we need this?
 
 // Route handler functions
 app.get('/', (request, response) => {
-  console.log(request, response);
+  console.log(request.method);
 
   response.json({ message: 'Service is running' });
 });
